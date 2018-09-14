@@ -8,8 +8,8 @@
 		var msg = "ABOUT ME";
 		var speed = 500;
 		var pos = val;
-		var msg1 = "****** "+msg+" ******";
-		var msg2 = "------- "+msg+" -------";
+		var msg1 = "/// "+msg+" ///";
+		var msg2 = "\\\\\\ "+msg+" \\\\\\";
 		if(pos == 0)
 		{
 		masg = msg1;
@@ -63,10 +63,16 @@
 		50%{background-position:100% 19%}
 		100%{background-position:0% 82%}
 		}
+		
+		hr {
+		height: 4px;
+		background-image: linear-gradient(90deg, red, blue, #00EE00);
+		border: 0;
+		}
 		h1 {
 		font-family:courier ;
 		font-size: 56px;
-		background: -webkit-linear-gradient(#000000, #c491a2);
+		background: -webkit-linear-gradient(#007FFF, #00AF33);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-align: center;
@@ -76,7 +82,7 @@
 		background-color: powderblue;
 		}
 		.greentext {
-			color: green;
+			color: #228B22;
 			font-family: "courier";
 		font-size: 100%;
 		font-weight: bold;
@@ -86,7 +92,6 @@
 			font-family: "courier";
 		font-size: 100%;
 		text-align: center;
-
 		}
 		</style>
 	</head>
@@ -105,6 +110,8 @@
 				<li>French</li>
 				<li>Chemistry.</li>
 			</ul>
+		</p>
+		<p class="redtext"> This background animation was coded entirely in CSS, and the title animation was done with a bit of javascript. <i>The &lt;hr&gt; tags are done with a custom gradient css class. </i>
 		</p>
 		
 	</div>
