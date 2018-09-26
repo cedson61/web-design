@@ -1,453 +1,453 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>All About HTML</title>
-    <style>
-    body {
-      font-family:courier;
-      text-align:left;
-      padding-top: 50px;
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    background-color: #000000;
-    color: #00FF00;
-    }
-    .wrapper {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 90%;
-    font-size: 0;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    }
-    .letter {
-    width: 24px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    overflow: hidden;
-    margin: 0 0;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #eee;
-    }
-    .letter:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    word-break: break-all;
-    background-color: #1d1f20;
-    }
-    .letter:nth-child(1):before {
-    content: "1100101001";
-    margin-top: -120px;
-    -webkit-animation-name: letter1;
-    animation-name: letter1;
-    -webkit-animation-duration: 1.7s;
-    animation-duration: 1.7s;
-    -webkit-animation-delay: 0.49s;
-    animation-delay: 0.49s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter1 {
-    from {
-    margin-top: -120px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter1 {
-    from {
-    margin-top: -120px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(2):before {
-    content: "0110100101";
-    margin-top: -216px;
-    -webkit-animation-name: letter2;
-    animation-name: letter2;
-    -webkit-animation-duration: 2.844s;
-    animation-duration: 2.844s;
-    -webkit-animation-delay: 0.21s;
-    animation-delay: 0.21s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter2 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter2 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(3):before {
-    content: "1011001010";
-    margin-top: -216px;
-    -webkit-animation-name: letter3;
-    animation-name: letter3;
-    -webkit-animation-duration: 3.06s;
-    animation-duration: 3.06s;
-    -webkit-animation-delay: 0.15s;
-    animation-delay: 0.15s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter3 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter3 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(4):before {
-    content: "0001101010";
-    margin-top: -72px;
-    -webkit-animation-name: letter4;
-    animation-name: letter4;
-    -webkit-animation-duration: 2.34s;
-    animation-duration: 2.34s;
-    -webkit-animation-delay: 0.22s;
-    animation-delay: 0.22s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter4 {
-    from {
-    margin-top: -72px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter4 {
-    from {
-    margin-top: -72px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(5):before {
-    content: "0110101001";
-    margin-top: -144px;
-    -webkit-animation-name: letter5;
-    animation-name: letter5;
-    -webkit-animation-duration: 2.5028571429s;
-    animation-duration: 2.5028571429s;
-    -webkit-animation-delay: 0.27s;
-    animation-delay: 0.27s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter5 {
-    from {
-    margin-top: -144px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter5 {
-    from {
-    margin-top: -144px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(6):before {
-    content: "1100101011";
-    margin-top: -48px;
-    -webkit-animation-name: letter6;
-    animation-name: letter6;
-    -webkit-animation-duration: 0.3733333333s;
-    animation-duration: 0.3733333333s;
-    -webkit-animation-delay: 0.86s;
-    animation-delay: 0.86s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter6 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter6 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(7):before {
-    content: "0011010011";
-    margin-top: -24px;
-    -webkit-animation-name: letter7;
-    animation-name: letter7;
-    -webkit-animation-duration: 0.92s;
-    animation-duration: 0.92s;
-    -webkit-animation-delay: 0.54s;
-    animation-delay: 0.54s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter7 {
-    from {
-    margin-top: -24px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter7 {
-    from {
-    margin-top: -24px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(8):before {
-    content: "1011001011";
-    margin-top: -144px;
-    -webkit-animation-name: letter8;
-    animation-name: letter8;
-    -webkit-animation-duration: 2.7771428571s;
-    animation-duration: 2.7771428571s;
-    -webkit-animation-delay: 0.19s;
-    animation-delay: 0.19s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter8 {
-    from {
-    margin-top: -144px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter8 {
-    from {
-    margin-top: -144px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(9):before {
-    content: "1001101011";
-    margin-top: -48px;
-    -webkit-animation-name: letter9;
-    animation-name: letter9;
-    -webkit-animation-duration: 0.2666666667s;
-    animation-duration: 0.2666666667s;
-    -webkit-animation-delay: 0.9s;
-    animation-delay: 0.9s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter9 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter9 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(10):before {
-    content: "1000101101";
-    margin-top: -48px;
-    -webkit-animation-name: letter10;
-    animation-name: letter10;
-    -webkit-animation-duration: 0.3466666667s;
-    animation-duration: 0.3466666667s;
-    -webkit-animation-delay: 0.87s;
-    animation-delay: 0.87s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter10 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter10 {
-    from {
-    margin-top: -48px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(11):before {
-    content: "1001011101";
-    margin-top: -96px;
-    -webkit-animation-name: letter11;
-    animation-name: letter11;
-    -webkit-animation-duration: 1.888s;
-    animation-duration: 1.888s;
-    -webkit-animation-delay: 0.41s;
-    animation-delay: 0.41s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter11 {
-    from {
-    margin-top: -96px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter11 {
-    from {
-    margin-top: -96px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    .letter:nth-child(12):before {
-    content: "0001100101";
-    margin-top: -216px;
-    -webkit-animation-name: letter12;
-    animation-name: letter12;
-    -webkit-animation-duration: 1.44s;
-    animation-duration: 1.44s;
-    -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    @-webkit-keyframes letter12 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    @keyframes letter12 {
-    from {
-    margin-top: -216px;
-    }
-    to {
-    margin-top: 24px;
-    }
-    }
-    
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="letters"><span class="letter">A</span><span class="letter">b</span><span class="letter">o</span><span class="letter">u</span><span class="letter">t</span><span class="letter">&nbsp;</span><span class="letter">H</span><span class="letter">t</span><span class="letter">m</span><span class="letter">l</span><span class="letter">&nbsp;</span><span class="letter">5</span>
+    <head>
+        <meta charset="UTF-8">
+        <title>All About HTML</title>
+        <style>
+        body {
+        font-family:courier;
+        text-align:left;
+        padding-top: 50px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        background-color: #000000;
+        color: #00FF00;
+        }
+        .wrapper {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 90%;
+        font-size: 0;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        }
+        .letter {
+        width: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        margin: 0 0;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #eee;
+        }
+        .letter:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        word-break: break-all;
+        background-color: #1d1f20;
+        }
+        .letter:nth-child(1):before {
+        content: "1100101001";
+        margin-top: -120px;
+        -webkit-animation-name: letter1;
+        animation-name: letter1;
+        -webkit-animation-duration: 1.7s;
+        animation-duration: 1.7s;
+        -webkit-animation-delay: 0.49s;
+        animation-delay: 0.49s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter1 {
+        from {
+        margin-top: -120px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter1 {
+        from {
+        margin-top: -120px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(2):before {
+        content: "0110100101";
+        margin-top: -216px;
+        -webkit-animation-name: letter2;
+        animation-name: letter2;
+        -webkit-animation-duration: 2.844s;
+        animation-duration: 2.844s;
+        -webkit-animation-delay: 0.21s;
+        animation-delay: 0.21s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter2 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter2 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(3):before {
+        content: "1011001010";
+        margin-top: -216px;
+        -webkit-animation-name: letter3;
+        animation-name: letter3;
+        -webkit-animation-duration: 3.06s;
+        animation-duration: 3.06s;
+        -webkit-animation-delay: 0.15s;
+        animation-delay: 0.15s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter3 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter3 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(4):before {
+        content: "0001101010";
+        margin-top: -72px;
+        -webkit-animation-name: letter4;
+        animation-name: letter4;
+        -webkit-animation-duration: 2.34s;
+        animation-duration: 2.34s;
+        -webkit-animation-delay: 0.22s;
+        animation-delay: 0.22s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter4 {
+        from {
+        margin-top: -72px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter4 {
+        from {
+        margin-top: -72px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(5):before {
+        content: "0110101001";
+        margin-top: -144px;
+        -webkit-animation-name: letter5;
+        animation-name: letter5;
+        -webkit-animation-duration: 2.5028571429s;
+        animation-duration: 2.5028571429s;
+        -webkit-animation-delay: 0.27s;
+        animation-delay: 0.27s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter5 {
+        from {
+        margin-top: -144px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter5 {
+        from {
+        margin-top: -144px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(6):before {
+        content: "1100101011";
+        margin-top: -48px;
+        -webkit-animation-name: letter6;
+        animation-name: letter6;
+        -webkit-animation-duration: 0.3733333333s;
+        animation-duration: 0.3733333333s;
+        -webkit-animation-delay: 0.86s;
+        animation-delay: 0.86s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter6 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter6 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(7):before {
+        content: "0011010011";
+        margin-top: -24px;
+        -webkit-animation-name: letter7;
+        animation-name: letter7;
+        -webkit-animation-duration: 0.92s;
+        animation-duration: 0.92s;
+        -webkit-animation-delay: 0.54s;
+        animation-delay: 0.54s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter7 {
+        from {
+        margin-top: -24px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter7 {
+        from {
+        margin-top: -24px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(8):before {
+        content: "1011001011";
+        margin-top: -144px;
+        -webkit-animation-name: letter8;
+        animation-name: letter8;
+        -webkit-animation-duration: 2.7771428571s;
+        animation-duration: 2.7771428571s;
+        -webkit-animation-delay: 0.19s;
+        animation-delay: 0.19s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter8 {
+        from {
+        margin-top: -144px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter8 {
+        from {
+        margin-top: -144px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(9):before {
+        content: "1001101011";
+        margin-top: -48px;
+        -webkit-animation-name: letter9;
+        animation-name: letter9;
+        -webkit-animation-duration: 0.2666666667s;
+        animation-duration: 0.2666666667s;
+        -webkit-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards
+        }
+        @-webkit-keyframes letter9 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter9 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(10):before {
+        content: "1010101101";
+        margin-top: -48px;
+        -webkit-animation-name: letter10;
+        animation-name: letter10;
+        -webkit-animation-duration: 0.3466666667s;
+        animation-duration: 0.3466666667s;
+        -webkit-animation-delay: 0.87s;
+        animation-delay: 0.87s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter10 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter10 {
+        from {
+        margin-top: -48px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(11):before {
+        content: "1001011101";
+        margin-top: -96px;
+        -webkit-animation-name: letter11;
+        animation-name: letter11;
+        -webkit-animation-duration: 1.888s;
+        animation-duration: 1.888s;
+        -webkit-animation-delay: 0.41s;
+        animation-delay: 0.41s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter11 {
+        from {
+        margin-top: -96px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter11 {
+        from {
+        margin-top: -96px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        .letter:nth-child(12):before {
+        content: "0001100101";
+        margin-top: -216px;
+        -webkit-animation-name: letter12;
+        animation-name: letter12;
+        -webkit-animation-duration: 1.44s;
+        animation-duration: 1.44s;
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes letter12 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        @keyframes letter12 {
+        from {
+        margin-top: -216px;
+        }
+        to {
+        margin-top: 24px;
+        }
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="letters"><span class="letter">A</span><span class="letter">b</span><span class="letter">o</span><span class="letter">u</span><span class="letter">t</span><span class="letter">&nbsp;</span><span class="letter">H</span><span class="letter">t</span><span class="letter">m</span><span class="letter">l</span><span class="letter">&nbsp;</span><span class="letter">5</span>
+        </div>
     </div>
-  </div>
-  &nbsp;<br>
-  &nbsp;<br>
-  <p> Because HTML is often the people’s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day. </p>
-  <h3> A markup language </h3>
-  HTML is a markup language. That means that content on the page is “marked up” by tags which identify the content inside of them. A paragraph, for example, can be identified by placing the <samp>“&#60;p&#62;”</samp> opening tag prior to the paragraphs content and the <samp>“&#60;/p&#62;"</samp> closing tag at the end of a paragraph. The full paragraph would look like this: <br>
-  <samp>&#60;p&#62;This is a paragraph.&#60;/p&#62;</samp> <br>
-  &nbsp;<br>
-  Tags consist of a left-angle bracket <samp>&#60;</samp> followed by a character or characters that identify the tag (the “p” for paragraph) and a closing right-angle bracket <samp>&#62;</samp>. The closing tags for an element are exactly the same as an opening tag, except that a forward slash <samp>/</samp> will precede the tags characters.
-  Although most elements require an opening and a closing tag, the closing tag is optional for some elements and not required at all for others. While there are exceptions to the rule, for the most part any element that contains content inside the opening and closing tags also requires a closing tag.
-  <h3>Basic document structure</h3>
-  The core of all HTML documents revolves around three basic tags. First, an html tag <samp>(&#60;html&#62;)</samp> is required to identify the document as an HTML file. Directly inside the html tag, you’ll find the head element <samp>(&#60;head&#62;)</samp>. The head of a document is where you’ll find the document’s metadata, the document title, and links to external resources such as style sheets and scripts. A good way to think about the document’s head is that it doesn’t contain any of the page’s visual content rather it contains information about the document and the resources that help make the page work. Directly after the document’s head, you’ll find its body <samp>(&#60;body&#62;)</samp>. The body is where you’ll find all of the page’s actual content. Headings, paragraphs, images, lists, tables, and other content will be located here. At its most basic, an HTML file would look like this: <br>
-  &nbsp;<br>
-  <samp>
-  &#60;html&#62;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&#60;/head&#62;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&#60;body&#62;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&#60;/body&#62;<br>
-  &#60;/html&#60;<br>
-  </samp>
-  
-  <h3>DOCTYPES</h3>
-  If you’ve looked at HTML pages before, you’ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it’s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you’re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering “standards-mode” rather than “quirks mode” (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim’s excellent section on doctypes from his <a style="color: #20B2AA ;" href="http://www.diveintohtml5.net/index.html"> Dive into HTML5 </a> book. Here are some of the more common HTML doctypes:<br>
-  &nbsp;<br>
-  <em>HTML 4.0 transitional</em> <br>
-  <samp>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&#62;</samp> <br>
-  &nbsp;<br>
-  <em>XHTML 1.0 Transitional</em> <br>
-  <samp>&#60;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&#62;</samp> <br>
-  &nbsp;<br>
-  <em>HTML5</em> <br>
-  <samp>&#60;!DOCTYPE HTML&#62; </samp> <br>
-  <h3>Element attributes</h3>
-  Some elements can be enhanced through the use of attributes. Attributes allow you to provide more information or additional functionality to the content. Attributes are added to the opening tag of an element and consist of two parts, the name and value. Although the syntax varies based on the version of HTML you’re using, it’s standard practice to put values within quotation marks.<br>
-  <samp>&#60;h1&#62; class=”headline”>Article’s main headline&#60;/h1&#62;</samp><br>
-  <h3>Replaced elements</h3>
-  Some HTML elements represent content that is replaced by an outside resource such as an image, form control, or a video file. These elements are referred to as replaced elements and usually have a predetermined width or height. In some cases the elements will have attributes that tell the browser where to find an external resource like an image or video. <br>
-  <samp>&#60;img src=“photo.jpg” alt=“my awesome photo”&#62; </samp>
-  <h3>Code structure</h3>
-  <p>HTML documents create structure by nesting elements inside of one another. You might group a section of page content together by wrapping them within a <samp>&#60;div&#62;</samp> or <samp>&#60;section&#62;</samp> element, for example. When nesting one tag within another one, you must first close any child elements prior to closing any parent elements.
-    This syntax, for example, would be incorrect:<br>
     &nbsp;<br>
-    <samp>&#60;p&#62;You must close all nested tags &#60;strong&#62;first!&#60;/p&#62;&#60;/strong&#62;</samp><br>
     &nbsp;<br>
-    Rather, the correct syntax would be:<br>
+    <p> Because HTML is often the people’s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day. </p>
+    <h3> A markup language </h3>
+    HTML is a markup language. That means that content on the page is “marked up” by tags which identify the content inside of them. A paragraph, for example, can be identified by placing the <samp>“&#60;p&#62;”</samp> opening tag prior to the paragraphs content and the <samp>“&#60;/p&#62;"</samp> closing tag at the end of a paragraph. The full paragraph would look like this: <br>
+    <samp>&#60;p&#62;This is a paragraph.&#60;/p&#62;</samp> <br>
     &nbsp;<br>
-    <samp>&#60;p&#62;You must close all nested tags &#60;strong&#62;first!&#60;/strong&#62;&#60;/p&#62;</samp><br>
+    Tags consist of a left-angle bracket <samp>&#60;</samp> followed by a character or characters that identify the tag (the “p” for paragraph) and a closing right-angle bracket <samp>&#62;</samp>. The closing tags for an element are exactly the same as an opening tag, except that a forward slash <samp>/</samp> will precede the tags characters.
+    Although most elements require an opening and a closing tag, the closing tag is optional for some elements and not required at all for others. While there are exceptions to the rule, for the most part any element that contains content inside the opening and closing tags also requires a closing tag.
+    <h3>Basic document structure</h3>
+    The core of all HTML documents revolves around three basic tags. First, an html tag <samp>(&#60;html&#62;)</samp> is required to identify the document as an HTML file. Directly inside the html tag, you’ll find the head element <samp>(&#60;head&#62;)</samp>. The head of a document is where you’ll find the document’s metadata, the document title, and links to external resources such as style sheets and scripts. A good way to think about the document’s head is that it doesn’t contain any of the page’s visual content rather it contains information about the document and the resources that help make the page work. Directly after the document’s head, you’ll find its body <samp>(&#60;body&#62;)</samp>. The body is where you’ll find all of the page’s actual content. Headings, paragraphs, images, lists, tables, and other content will be located here. At its most basic, an HTML file would look like this: <br>
     &nbsp;<br>
-    HTML also has specific rules about which elements can be nested within other elements. A paragraph <samp>&#60;p&#62;</samp> for example, can’t be nested inside a heading <samp>&#60;h1&#62;</samp>.  For the most part, these rules are based around the type of content the tag represents. HTML 4 has two basic types of content: block and inline. Block-level elements typically occupy their own line within a document, usually stacking one on top of each other in the order they appear in your code. Inline-level elements can appear within the flow of block level elements. Elements like strong <samp>&#60;strong&#62;</samp>, bold <samp>&#60;b&#62;</samp>, emphasis <samp>&#60;em&#62;</samp>, italic <samp>&#60;i&#62;</samp>, and span <samp>&#60;span&#62;</samp> are always found inside block-level elements. <br>
+    <samp>
+    &#60;html&#62;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&#60;/head&#62;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&#60;body&#62;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&#60;/body&#62;<br>
+    &#60;/html&#60;<br>
+    </samp>
+    
+    <h3>DOCTYPES</h3>
+    If you’ve looked at HTML pages before, you’ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it’s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you’re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering “standards-mode” rather than “quirks mode” (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim’s excellent section on doctypes from his <a style="color: #20B2AA ;" href="http://www.diveintohtml5.net/index.html"> Dive into HTML5 </a> book. Here are some of the more common HTML doctypes:<br>
     &nbsp;<br>
-    HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C’s Markup Validation service.
-    <h3>Commenting code</h3>
-    Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you’ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens <br>
+    <em>HTML 4.0 transitional</em> <br>
+    <samp>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&#62;</samp> <br>
     &nbsp;<br>
-    <samp>&#60;!--</samp> and end with two hyphens followed by a right-angle bracket <samp>--&#62;</samp>.
+    <em>XHTML 1.0 Transitional</em> <br>
+    <samp>&#60;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&#62;</samp> <br>
     &nbsp;<br>
-    Comment syntax:
-    &nbsp;<br>
-    <samp>&#60;!-- This is a comment --&#62;</samp>
-    <h3>Using special characters </h3>
-    Certain characters are reserved in HTML, meaning that you shouldn’t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a named character entity. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand <samp>&</samp> followed by the entity name and end with a semicolon <samp>;</samp>. To display an ampersand, for example, you would type &amp;amp; in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the HTML Reference page, and a <a style="color: #20B2AA ;" href="https://www.w3schools.com/tags/">more comprehensive list </a> on W3Schools.com.
-  </body>
+    <em>HTML5</em> <br>
+    <samp>&#60;!DOCTYPE HTML&#62; </samp> <br>
+    <h3>Element attributes</h3>
+    Some elements can be enhanced through the use of attributes. Attributes allow you to provide more information or additional functionality to the content. Attributes are added to the opening tag of an element and consist of two parts, the name and value. Although the syntax varies based on the version of HTML you’re using, it’s standard practice to put values within quotation marks.<br>
+    <samp>&#60;h1&#62; class=”headline”>Article’s main headline&#60;/h1&#62;</samp><br>
+    <h3>Replaced elements</h3>
+    Some HTML elements represent content that is replaced by an outside resource such as an image, form control, or a video file. These elements are referred to as replaced elements and usually have a predetermined width or height. In some cases the elements will have attributes that tell the browser where to find an external resource like an image or video. <br>
+    <samp>&#60;img src=“photo.jpg” alt=“my awesome photo”&#62; </samp>
+    <h3>Code structure</h3>
+    <p>HTML documents create structure by nesting elements inside of one another. You might group a section of page content together by wrapping them within a <samp>&#60;div&#62;</samp> or <samp>&#60;section&#62;</samp> element, for example. When nesting one tag within another one, you must first close any child elements prior to closing any parent elements.
+        This syntax, for example, would be incorrect:<br>
+        &nbsp;<br>
+        <samp>&#60;p&#62;You must close all nested tags &#60;strong&#62;first!&#60;/p&#62;&#60;/strong&#62;</samp><br>
+        &nbsp;<br>
+        Rather, the correct syntax would be:<br>
+        &nbsp;<br>
+        <samp>&#60;p&#62;You must close all nested tags &#60;strong&#62;first!&#60;/strong&#62;&#60;/p&#62;</samp><br>
+        &nbsp;<br>
+        HTML also has specific rules about which elements can be nested within other elements. A paragraph <samp>&#60;p&#62;</samp> for example, can’t be nested inside a heading <samp>&#60;h1&#62;</samp>.  For the most part, these rules are based around the type of content the tag represents. HTML 4 has two basic types of content: block and inline. Block-level elements typically occupy their own line within a document, usually stacking one on top of each other in the order they appear in your code. Inline-level elements can appear within the flow of block level elements. Elements like strong <samp>&#60;strong&#62;</samp>, bold <samp>&#60;b&#62;</samp>, emphasis <samp>&#60;em&#62;</samp>, italic <samp>&#60;i&#62;</samp>, and span <samp>&#60;span&#62;</samp> are always found inside block-level elements. <br>
+        &nbsp;<br>
+        HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C’s Markup Validation service.
+        <h3>Commenting code</h3>
+        Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you’ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens <br>
+        &nbsp;<br>
+        <samp>&#60;!--</samp> and end with two hyphens followed by a right-angle bracket <samp>--&#62;</samp>.
+        &nbsp;<br>
+        Comment syntax:
+        &nbsp;<br>
+        <samp>&#60;!-- This is a comment --&#62;</samp>
+        <h3>Using special characters </h3>
+        Certain characters are reserved in HTML, meaning that you shouldn’t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a named character entity. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand <samp>&</samp> followed by the entity name and end with a semicolon <samp>;</samp>. To display an ampersand, for example, you would type &amp;amp; in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the HTML Reference page, and a <a style="color: #20B2AA ;" href="https://www.w3schools.com/tags/">more comprehensive list </a> on W3Schools.com.
+    </body>
