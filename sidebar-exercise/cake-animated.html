@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Courier", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="animated.html">Home</a>
+  <a href="cookies-animated.html">Cookies</a>
+  <a href="cake-animated.html">Cake</a>
+  <a href="bread-animated.html">Bread</a>
+  <a href="vanilla-syrup-animated.html">Vanilla Syrup</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h1 style="text-align:center;">Ingredients</h1>
+<p style="text-align:center;">3 cups all-purpose flour<br>
+2 teaspoons baking powder<br>
+1 teaspoon baking soda<br>
+1 pinch salt<br>
+1 cup butter softened to room temperature<br>
+2 cups sugar<br>
+4 large eggs at room temperature<br>
+1 cup buttermilk at room temperature<br>
+2 1/2 teaspoons vanilla extract<br>
+Chocolate Buttercream Frosting</p>
+<h1 style="text-align:center;"> Directions </h1>
+<p style="text-align:center;">Preheat oven to 350º F. Prepare three 8-inch cake pans by spraying with baking spray or buttering and lightly flouring.<br>
+&nbsp;<br>
+Combine flour, baking powder, baking soda, and salt in a large bowl. Whisk through to combine. Set aside. <br>
+&nbsp;<br>
+Cream butter until fluffy and then add sugar. Cream together for about 8 more minutes.<br>
+&nbsp;<br>
+Add eggs, one at a time, and mix just until combined. <br>
+&nbsp;<br>
+Add flour mixture and buttermilk, alternately, beginning and ending with flour. Combine each addition until well combined.<br>
+&nbsp;<br>
+Add vanilla and mix until thoroughly combined. <br>
+&nbsp;<br>
+Divide among pans and bake for 25-30 minutes until edges turn loose from pan and toothpick inserted into middle of cake comes out clean. <br>
+&nbsp;<br>
+Remove from the oven and allow to cool for about 10 minutes. Turn out onto wire cooling racks and allow to cool completely. <br>
+&nbsp;<br>
+Frost cake with Chocolate Buttercream Frosting.<br>
+&nbsp;<br>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
