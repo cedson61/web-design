@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Courier", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="animated.html">Home</a>
+  <a href="cookies-animated.html">Cookies</a>
+  <a href="cake-animated.html">Cake</a>
+  <a href="bread-animated.html">Bread</a>
+  <a href="vanilla-syrup-animated.html">Vanilla Syrup</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h1 style="text-align:center;">Ingredients</h1>
+<p style="text-align:center;">3/4 cup granulated sugar<br>
+3/4 cup packed brown sugar<br>
+1 cup butter or margarine, softened SAVE $<br>
+1 teaspoon vanilla<br>
+1 egg<br>
+2 1/4 cups Gold Medal™ all-purpose flour<br>
+1 teaspoon baking soda<br>
+1/2 teaspoon salt<br>
+1 cup coarsely chopped nuts<br>
+1 package (12 ounces) semisweet chocolate chips (2 cups)</p>
+
+<h1 style="text-align:center;"> Directions </h1>
+<p style="text-align:center;">Heat oven to 375ºF.<br>
+ &nbsp;<br>
+Mix sugars, butter, vanilla and egg in large bowl. Stir in flour, baking soda and salt (dough will be stiff). Stir in nuts and chocolate chips.<br>
+ &nbsp;<br>
+Drop dough by rounded tablespoonfuls about 2 inches apart onto ungreased cookie sheet.<br>
+ &nbsp;<br>
+Bake 8 to 10 minutes or until light brown (centers will be soft). Cool slightly; remove from cookie sheet. Cool on wire rack.<br>
+&nbsp;<br>
+</p>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
