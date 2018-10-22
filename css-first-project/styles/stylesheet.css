@@ -1,0 +1,26 @@
+h1{
+	color: lime;
+}
+
+h2{
+	color: aqua;
+}
+
+p{
+	color:black;
+
+}
+
+.interesting{
+	color:red;
+}
+.important{
+	font-size:150%;
+}
+.main{
+	background-color:blue;
+	border: 10px;
+}
+body{
+	background-color: white;
+}
