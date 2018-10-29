@@ -1,0 +1,27 @@
+.box1
+{
+	background-color: #FF0000;
+	border-style: dotted;
+}
+
+.box2
+{
+	background-color: #00FF00;
+	border-style: ridge;
+}
+
+.box3
+{
+	background-color: #00FFFF;
+	border-style: dashed;
+}
+
+.box4
+{
+	background-color: #FFFF00;
+	border-style: outset;
+}
+
+body{
+	padding: 100px;
+}
