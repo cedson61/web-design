@@ -2,24 +2,33 @@
 {
 	background-color: #FF0000;
 	border-style: dotted;
+	padding:20px;
+	margin-top: 20px;
 }
 
 .box2
 {
 	background-color: #00FF00;
 	border-style: ridge;
+	padding:20px;
+	margin-top: 20px;
+
 }
 
 .box3
 {
 	background-color: #00FFFF;
 	border-style: dashed;
+	padding:20px;
+	margin-top: 20px;
 }
 
 .box4
 {
 	background-color: #FFFF00;
 	border-style: outset;
+	padding:20px;
+	margin-top: 20px;
 }
 
 body{
