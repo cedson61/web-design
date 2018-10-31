@@ -5,6 +5,7 @@
 	padding:20px;
 	margin-top: 20px;
 	height:50px;
+	float: right;
 }
 
 .box2
@@ -14,6 +15,7 @@
 	padding:20px;
 	margin-top: 20px;
 	height:50px;
+	float: left;
 
 }
 
@@ -24,6 +26,7 @@
 	padding:20px;
 	margin-top: 20px;
 	height:50px;
+	float: right;
 }
 
 .box4
@@ -33,6 +36,8 @@
 	padding:20px;
 	margin-top: 20px;
 	height:50px;
+	float: left;
+
 }
 
 body{
