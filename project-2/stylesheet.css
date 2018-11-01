@@ -1,8 +1,32 @@
-body{
+/* defines global values */	
+	body{
 font-family: Helvetica;
+background-color: #fffff4;
 }
+
+	h1#title{
+text-align:center;
+}
+/* begin pseudo-classes */
+	a:link {
+text-decoration: none;
+}
+
+	a:visited {
+text-decoration: none;
+}
+
+	a:hover {
+text-decoration: underline;
+}
+
+	a:active {
+text-decoration: underline;
+}
+/* end pseudo-classes */
+
 /* The title bar */
-.topbar {
+	.topbar {
 overflow: hidden;
 background-color: #333;
 position: fixed; /* Set the navbar to fixed position */
@@ -12,30 +36,85 @@ color: white;
 font-weight: bold;
 text-align: center;
 }
-.image {
+/* Defines the header image */
+	.image {
 max-width: 100%;
 max-height: 100%;
 object-fit: cover
 }
-.about{
+
+	.about{
 text-align: center;
 }
-.right{
-	float:right;
-	text-align:left;
-	width: 30%;
+/* aligns right element */
+	.right{
+float:right;
+text-align:center;
+width: 30%;
+padding-left: 10px;
+padding-right: 30px;
 }
-.left{
-	float: left;
-	text-align:center;
-	width: 33%;
+/* aligns left element */
+	.left{
+float: left;
+text-align:center;
+width: 33%;
 }
-.center{
-	display: inline-block;
-    margin:0 auto;
-    text-align:center;
-    
+/* aligns center element */
+	.center{
+display: inline-block;
+margin:0 auto;
+text-align:center;
 }
-.container {
-    width:100%;
-    text-align:center;
+/* contains elements */
+	.container {
+width:100%;
+text-align:center;
+}
+/* container for table */
+	.schedule {
+padding-top: 250px;
+padding-bottom: 250px;
+text-align: center;
+margin: auto;
+width: 50%;
+text-align: center;
+}
+
+	.tg  {
+border-collapse:collapse;
+border-spacing:0;
+border: 3px solid green;
+}
+/* defines table cells */
+	.tg td{
+font-family:Arial, sans-serif;
+font-size:14px;
+padding:10px 5px;
+border-style:solid;
+border-width:0px;
+overflow:hidden;
+word-break:normal;
+border-top-width:1px;
+border-bottom-width:1px;
+border-color:black;
+}
+/* defines table headers */
+	.tg th{
+font-family:Arial, sans-serif;
+font-size:14px;
+font-weight:normal;
+padding:10px 5px;
+border-style:solid;border-width:0px;
+overflow:hidden;
+word-break:normal;
+border-top-width:1px;
+border-bottom-width:1px;
+border-color:black;
+}
+
+	.tg-0pky{
+border-color:inherit;
+text-align:left;
+vertical-align:top;
+}
