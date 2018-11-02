@@ -3,6 +3,7 @@
 font-family: Helvetica;
 background-color: #fffff4;
 }
+
 /* removes default margins */	
 
 html,body {
@@ -12,6 +13,8 @@ html,body {
 
 	h1#title{
 text-align:center;
+font-family: 'Alegreya', serif;
+
 }
 /* begin pseudo-classes */
 	a:link {
@@ -30,6 +33,12 @@ text-decoration: underline;
 text-decoration: underline;
 }
 /* end pseudo-classes */
+	.toptext {
+font-family: 'Alegreya', serif;
+	}
+	.paragraphs {
+font-family: 'Roboto', sans-serif;
+	}
 
 /* The title bar */
 	.topbar {
