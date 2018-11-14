@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+.class1{
+background-color: red;
+}
+.class2{
+background-color: green;
+}
+</style>
+<script>
+function setGreen()
+{
+	document.getElementById("text").className = "class2";
+}
+</script>
+</head>
+<body>
+
+<h2>Change Div</h2>
+
+<button type="button"
+onclick="setGreen()" value="Green"
+style="height:20px;width:50px">
+
+</button>
+
+<div class="class1" id="text"> This is a div </div>
+
+</body>
+</html> 
