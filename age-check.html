@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Page Title Here</title>
+  <title>Is age over 18?</title>
   <script>
    function over18() {
     var x = document.getElementById("age").value;
     var y = 18;
 
     if (x > y) {
-        alert("You are over 18 years old.");
+        alert("You are over 18 years old. Please visit your nearest polling center to vote.");
     }
     if (x < y) {
         alert("You are not over 18 years old.")
@@ -23,7 +23,7 @@
 
 <input type="text" id="age" name="age" required
        minlength="1" maxlength="3" size="10">
-<button onclick="over18()">Try it</button>
+<button onclick="over18()">Check your age.</button>
 
 
 

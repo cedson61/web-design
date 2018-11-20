@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Electric Bike Hub Motor Range Calculator</title>
+  <script>
+   function range() {
+    var ah = document.getElementById("Ah").value;
+    var v = document.getElementById("V").value;
+    var whpm = document.getElementById("whpm").value;
+    var wh = (ah * v)
+    var fin = (wh / whpm)
+    var gas = ((wh / 33000) * 100);
+      gas = gas.toFixed(2);
+    
+    alert (fin + ' miles on a charge, or about ' + gas + ' percent of a gallon of gas. ')  
+}
+
+</script>
+</head>
+<body>
+ <h1> Electric Bike Range Calculator </h1> <br> 
+<label for="Ah">Battery Amp Hours:</label>
+<input type="text" id="Ah" name="Ah" size="10"> <br>
+<label for="V">Battery Voltage:</label>
+<input type="text" id="V" name="V" size="10"><br>
+<label for="whpm">Speed travelled:</label>
+<select id="whpm">
+  <option value="30">23 mph (37 kph)</option>
+  <option value="35">26 mph (41 kph)</option>
+  <option value="40">30 mph (48 kph)</option>
+  <option value="45">35 mph (56 kph)</option>
+</select> <br>
+<button onclick="range()">Calculate Range</button>
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
