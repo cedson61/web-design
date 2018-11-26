@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+
+		<script>
+			var h = 0
+			var t = 0
+			var f = 0
+
+			function voteforhonda() {
+				h = h+1
+				document.getElementById("honda").innerHTML = "Total number of Honda votes: " + h;
+
+			}
+			function votefortoyota() {
+				t = t+1
+				document.getElementById("toyota").innerHTML = "Total number of Toyota votes: " + t;
+			}
+			function voteforferrari() {
+				f = f+1
+				document.getElementById("ferrari").innerHTML = "Total number of Ferrari votes: " + f;
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1> Please use the buttons below to vote for your favorite car.</h1>
+		<input type="button" value="Honda" onClick="voteforhonda()">
+		<input type="button" value="Toyota" onClick="votefortoyota()">
+		<input type="button" value="Ferrari" onClick="voteforferrari()">
+		<h2 id="honda"></h2>
+		<h2 id="toyota"></h2>
+		<h2 id="ferrari"></h2>
+
+
+	</body>
+
+</html>
