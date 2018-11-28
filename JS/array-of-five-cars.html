@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+
+		<script>
+			var carVoteArray = new Array();
+			carVoteArray[0] = "Honda ";
+			carVoteArray[1] = "Toyota ";
+			carVoteArray[2] = "Chrystler ";
+			carVoteArray[3] = "BMW ";
+			carVoteArray[4] = "Audi ";
+
+
+			function printCars() {
+				document.getElementById("cars").innerHTML = "The Cars are: " + carVoteArray[0] + carVoteArray[1] + carVoteArray[2] + carVoteArray[3] + carVoteArray[4];
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1> Click the button below to display the array.</h1>
+		<input type="button" value="Honda" onClick="printCars()">
+		<h1 id="cars"></h1>
+
+
+	</body>
+
+</html>

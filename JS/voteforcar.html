@@ -4,22 +4,24 @@
 	<head> 
 
 		<script>
-			var h = 0
-			var t = 0
-			var f = 0
+			var carVoteArray = new Array();
+			carVoteArray[0] = 0;
+			carVoteArray[1] = 0;
+			carVoteArray[2] = 0;
+
 
 			function voteforhonda() {
-				h = h+1
-				document.getElementById("honda").innerHTML = "Total number of Honda votes: " + h;
+				carVoteArray[0] = carVoteArray[0]+1
+				document.getElementById("honda").innerHTML = "Total number of Honda votes: " + carVoteArray[0];
 
 			}
 			function votefortoyota() {
-				t = t+1
-				document.getElementById("toyota").innerHTML = "Total number of Toyota votes: " + t;
+				carVoteArray[1] = carVoteArray[1]+1
+				document.getElementById("toyota").innerHTML = "Total number of Toyota votes: " + carVoteArray[1];
 			}
 			function voteforferrari() {
-				f = f+1
-				document.getElementById("ferrari").innerHTML = "Total number of Ferrari votes: " + f;
+				carVoteArray[2] = carVoteArray[2]+1
+				document.getElementById("ferrari").innerHTML = "Total number of Ferrari votes: " + carVoteArray[2];
 			}
 
 		</script>
