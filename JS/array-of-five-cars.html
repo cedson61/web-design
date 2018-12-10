@@ -11,9 +11,19 @@
 			carVoteArray[3] = "BMW ";
 			carVoteArray[4] = "Audi ";
 
+			var numbers = new Array();
+			numbers[0] = 34
+			numbers[1] = 75
+			numbers[2] = 89
+			numbers[3] = 90
+			numbers[4] = 100
 
 			function printCars() {
 				document.getElementById("cars").innerHTML = "The Cars are: " + carVoteArray[0] + carVoteArray[1] + carVoteArray[2] + carVoteArray[3] + carVoteArray[4];
+
+			}
+			function printNumbers() {
+				document.getElementById("num").innerHTML = "Total: " + numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
 
 			}
 		</script>
@@ -25,6 +35,10 @@
 		<h1> Click the button below to display the array.</h1>
 		<input type="button" value="Honda" onClick="printCars()">
 		<h1 id="cars"></h1>
+
+		<h1> Click the button below to add numbers.</h1>
+		<input type="button" value="Number" onClick="printNumbers()">
+		<h1 id="num"></h1>
 
 
 	</body>
